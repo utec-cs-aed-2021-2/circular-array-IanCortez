@@ -5,7 +5,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "(Windows) Iniciar",
+			"name": "(Windows) Start",
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceFolder}\\a.exe",
@@ -15,7 +15,7 @@
 			"environment": [],
 			"console": "externalTerminal",
 			"miDebuggerPath": "D:\\MinGW\\mingw64\\bin\\gdb.exe",
-			"preLaunchTask": "Tarea1"
+			"preLaunchTask": "Tarea"
 		},
 	]
 }

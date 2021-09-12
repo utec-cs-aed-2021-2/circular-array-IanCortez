@@ -2,7 +2,7 @@
 	"tasks": [
 		{
 			"type": "shell",
-                        "label": "Tarea1",
+                        "label": "Tarea",
                         "command": "D:\\MinGW\\mingw64\\bin\\g++.exe",
                         "args": [
                                 "-g",

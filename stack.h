@@ -8,6 +8,8 @@ public:
 	void push(T data);
 	T pop();
 	void display();
+	void push_front(T data);
+	T pop_front();
 };
 
 
@@ -17,6 +19,13 @@ StackArray<T>::StackArray(): CircularArray<T>() {};
 template <typename T>
 StackArray<T>::StackArray(int _capacity): CircularArray<T>(_capacity) {};
 
+
+// Adding elements operations
+template <typename T>
+void StackArray<T>::push_front(T data){
+	push(data);
+}
+
 template <typename T>
 void StackArray<T>::push(T data){
 	if(front == -1){
@@ -25,6 +34,13 @@ void StackArray<T>::push(T data){
 		front = next(front);
 	}
 	array[front] = data;
+}
+
+
+// Removing elements operations
+template <typename T>
+T StackArray<T>::pop_front(){
+	return pop();
 }
 
 template <typename T>
